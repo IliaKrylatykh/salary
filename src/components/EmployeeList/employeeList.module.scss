@@ -1,0 +1,70 @@
+.employeeList {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(116, 220, 255);
+    padding: 20px 60px;
+    height: 700px;
+
+    .header {
+        background-color: rgb(90, 191, 224);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        // padding: 6px 0px;
+        width: 1140px;
+        height: 72px;
+        border: 1px solid teal;
+    }
+
+    .checkbox {
+        height: 16px;
+        width: 16px;
+        left: 0px;
+        top: 0px;
+        border-radius: 3px;
+    }
+
+    .name {
+        height: 20px;
+        width: 106px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .occupation {
+        height: 20px;
+        width: 87px;
+        left: 24px;
+        top: 16px;
+    }
+
+    .date {
+        height: 20px;
+        width: 45px;
+        left: 77px;
+        top: 16px;
+
+    }
+
+    .salary {
+        height: 20px;
+        width: 81px;
+        left: 17px;
+        top: 16px;
+    }
+
+    .requisites {
+        height: 20px;
+        width: 87px;
+        left: 29px;
+        top: 16px;
+    }
+
+    .paymentStatus {
+        height: 20px;
+        width: 68px;
+        left: 0px;
+        top: 0px;
+    }
+}
