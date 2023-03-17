@@ -11,11 +11,14 @@
         }
     
         .listItem {
+            display: flex;
+                align-items: center;
             margin: 10px;
         }
     
         .listText {
             text-decoration: none;
-            margin-left: 10px;
+            color: lightgrey;
+                margin: 10px;
         }
 }
