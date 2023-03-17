@@ -3,7 +3,11 @@
     flex-direction: column;
     background-color: rgb(116, 220, 255);
     padding: 20px 60px;
-    height: 700px;
+    height: 590px;
+    
+        .totalEmployees {
+            margin: 15px;
+        }
 
     .header {
         background-color: rgb(90, 191, 224);

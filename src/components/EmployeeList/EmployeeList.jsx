@@ -2,11 +2,18 @@ import EmployeeListItem from "../EmployeeListItem/EmployeeListItem";
 
 import classes from './employeeList.module.scss';
 
-
-const EmployeeList = ({employees}) => {
+const EmployeeList = ({employees, total}) => {
 
     return (
         <div className={classes.employeeList}>
+            <div className={classes.totalEmployees}>
+                {total} сотрудников
+            </div>
+            <div>
+                <input type="text" />
+                <button>Экспорт таблицы</button>
+                <button>+ Добавить сотрудника</button>
+            </div>
             <div className={classes.header}>
                 <input className={classes.checkbox} type="checkbox"/>
                 <div className={classes.name} >Имя Фамилия</div>

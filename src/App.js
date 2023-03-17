@@ -17,11 +17,9 @@ function App() {
             <div className='appBody'>
                 <LeftSideBar/>
                 <div>
-                    <input type="text" />
-                    <button>Экспорт таблицы</button>
-                    <button>+ Добавить сотрудника</button>
                     <EmployeeList
                         employees={employees}
+                        total={employees.length}
                     />
                 </div>
             </div>
