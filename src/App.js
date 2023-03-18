@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import EmployeeList from './components/EmployeeList/EmployeeList';
+import EmptyList from './components/EmptyList/EmptyList';
 import LeftSideBar from './components/LeftSideBar/LeftSideBar';
 import MainHeader from './components/MainHeader/MainHeader';
 import './styles/app.scss';
@@ -14,7 +15,7 @@ function App() {
         {id: 6, name: 'Майор', surname: 'Нечаев', occupation: 'Веб-дизайнер', date: '24.02.22', salary: 80000, requisites: 373948001861007, paymentStatus: false },
         {id: 7, name: 'Майор', surname: 'Нечаев', occupation: 'Веб-дизайнер', date: '24.02.22', salary: 80000, requisites: 373948001861007, paymentStatus: false },
         {id: 8, name: 'Майор', surname: 'Нечаев', occupation: 'Веб-дизайнер', date: '24.02.22', salary: 80000, requisites: 373948001861007, paymentStatus: false },
-        {id: 9, name: 'Майор', surname: 'Нечаев', occupation: 'Веб-дизайнер', date: '24.02.22', salary: 80000, requisites: 373948001861007, paymentStatus: false },
+        {id: 9, name: 'Майор', surname: 'Нечаев', occupation: 'Веб-дизайнер', date: '24.02.22', salary: 80000, requisites: 373948001861007, paymentStatus: false }
     ])
 
     return (
@@ -22,11 +23,15 @@ function App() {
             <MainHeader/>
             <div className='appBody'>
                 <LeftSideBar/>
-                <div>
-                    <EmployeeList
-                        employees={employees}
-                        total={employees.length}
-                    />
+                <div >
+                    {employees.length ? 
+                        <EmployeeList
+                            employees={employees}
+                            total={employees.length}
+                        /> :
+                        <EmptyList/>
+                    }
+                    
                 </div>
             </div>
         </div>
